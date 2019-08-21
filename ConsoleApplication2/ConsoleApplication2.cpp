@@ -5,7 +5,7 @@ using namespace std;
 int s[3][3], tf = 0, gofirst = 1, row, column, over = 0;
 bool end = false;
 
-void print()
+void print()   ///<note> 棋子生成 </note>
 {
 	cout << "-------" << endl;
 	for (int x = 0; x < 3; x++)
@@ -22,7 +22,7 @@ void print()
 	}
 	cout << endl;
 }
-int check()
+int check() ///<note>胜负判断</note>
 {
 	bool end = false;
 	for (int x = 0; x < 3; x++)
@@ -107,7 +107,7 @@ int check()
 		}
 	}
 }
-void computer()
+void computer()///<note>电脑AI</note>
 {
 	int breaktf = 0;
 	if (tf == 1)
@@ -203,7 +203,7 @@ void computer()
 		}
 	}
 }
-int main()
+int main()///<note>主程序</note>
 {
 	cout << "This is O and X" << endl;
 	cout << "Made by Skyzhou" << endl;
